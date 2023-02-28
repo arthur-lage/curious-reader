@@ -21,21 +21,39 @@
     <form class="search">
       <div class="wrapper">
         <div class="input-field">
-          <span>Username</span>
-
           <input id="username" type="text" placeholder="" autocomplete="off" />
+
+          <span>Username</span>
         </div>
 
         <button type="submit" id="search" class="search-button">Search</button>
       </div>
     </form>
 
-    <section class="user-data">
-      <img src="" class="user-banner" alt="" />
-      <img src="" class="user-avatar" alt="" />
-      <span>@<span class="twitter-username"></span></span>
-      <span>Answers: <span class="user-answers"></span></span>
-    </section>
+    <div class="user-data-wrapper">
+      <div class="loading lds-dual-ring"></div>
+
+      <section class="user-data">
+        <div class="user-images-wrapper">
+          <img src="" class="user-banner" alt="" />
+          <img src="" class="user-avatar" alt="" />
+        </div>
+
+        <section class="user-info-section">
+          <div class="user-username-wrapper user-info-wrapper">
+            <span class="title">Username</span>
+            <span class="information"
+              ><span>@</span><span class="twitter-username"></span
+            ></span>
+          </div>
+
+          <div class="user-answers-wrapper user-info-wrapper">
+            <span class="title">Answers</span>
+            <span class="user-answers information"></span>
+          </div>
+        </section>
+      </section>
+    </div>
 
     <script src="main.js"></script>
   </body>
