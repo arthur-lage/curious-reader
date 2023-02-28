@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #0f0f0f;
+  --primary: #45a0f5;
+  --secondary: #26e3c2;
+  --text: #fcfcfc;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: var(--background);
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 3.6rem;
+  padding-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 50rem;
+}
+
+.input-field {
+  position: relative;
+  color: white;
+  width: 90%;
+}
+
+.input-field span {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.input-field input {
+  border: 0;
+  color: var(--text);
+  border-bottom: 2px solid var(--text);
+  padding: 1.5rem 1.5rem 1rem 0.75rem;
+  outline: none;
+  font-size: 1.6rem;
+  width: 100%;
+  background: transparent;
+}
+
+.input-field input:focus ~ span {
+  bottom: 3rem;
+  left: 0.5rem;
+  transform: scale(0.8);
+}
+
+.search-button {
+  border-radius: 50rem;
+  border: 2px solid var(--text);
+  padding: 1rem;
+  width: 12rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+  color: var(--text);
+  transition: 0.15s ease;
+}
+
+.search-button:hover {
+  color: var(--background);
+  background: white;
+}
