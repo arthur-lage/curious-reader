@@ -12,7 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -30,7 +34,7 @@
       </div>
     </form>
 
-    <div class="user-data-wrapper">
+    <section class="user-data-wrapper">
       <div class="loading lds-dual-ring"></div>
 
       <section class="user-data">
@@ -53,8 +57,17 @@
           </div>
         </section>
       </section>
-    </div>
+    </section>
 
+    <section
+      id="questions-and-replies"
+      class="questions-and-replies-wrapper"
+    ></section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="main.js"></script>
   </body>
 </html>
